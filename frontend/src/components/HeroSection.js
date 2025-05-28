@@ -20,10 +20,12 @@ const HeroSection = () => {
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(10, 10, 11, 0.8), rgba(10, 10, 11, 0.9)), url('https://images.unsplash.com/photo-1611162618071-b39a2ec055fb')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        background: `
+          radial-gradient(circle at 20% 80%, rgba(0, 171, 236, 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, rgba(255, 107, 107, 0.2) 0%, transparent 50%),
+          linear-gradient(135deg, #0a0a0b 0%, #1a1a1b 50%, #0a0a0b 100%)
+        `
       }}
     >
       {/* Animated Background Elements */}
