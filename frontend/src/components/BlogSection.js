@@ -347,13 +347,14 @@ const BlogSection = () => {
                     placeholder="Ihre E-Mail-Adresse"
                     className="w-full bg-dark-800/50 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:border-primary-500 focus:outline-none transition-colors"
                   />
-                  <motion.button
+                  <motion.a
+                    href="/#contact"
                     className="w-full gradient-primary py-3 rounded-xl text-white font-semibold hover-glow"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
                     Abonnieren
-                  </motion.button>
+                  </motion.a>
                 </div>
                 <p className="text-xs text-gray-400 mt-3">
                   Kein Spam. Jederzeit abbestellbar.
