@@ -3,7 +3,7 @@ previews:
 
 services:
   - type: web
-    name: jeancloud-app
+    name: PerformanceMarketingAgentur
     runtime: docker
     repo: https://github.com/JeanCloud43722/app
     branch: main
@@ -22,4 +22,4 @@ services:
       # - key: API_KEY
       #   sync: false
     domains:
-      - jeancloud-app.onrender.com
+      - PerformanceMarketingAgentur-app.onrender.com
