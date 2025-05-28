@@ -30,6 +30,7 @@ const HeroSection = () => {
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
+        {/* Animated Gradient Orbs */}
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl"
           animate={{
@@ -53,6 +54,58 @@ const HeroSection = () => {
             repeat: Infinity,
             ease: "easeInOut",
             delay: 2
+          }}
+        />
+        
+        {/* Floating Geometric Elements */}
+        <motion.div
+          className="absolute top-1/4 right-1/4 w-4 h-4 bg-primary-400/40 rotate-45"
+          animate={{
+            y: [0, -20, 0],
+            rotate: [45, 225, 45]
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute top-3/4 left-1/4 w-3 h-3 bg-coral-400/40 rounded-full"
+          animate={{
+            y: [0, -15, 0],
+            x: [0, 10, 0]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-10 w-2 h-2 bg-teal-400/40 rounded-full"
+          animate={{
+            y: [0, -25, 0],
+            scale: [1, 1.5, 1]
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+        />
+        
+        {/* Subtle Grid Pattern */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `
+              linear-gradient(90deg, rgba(0, 171, 236, 0.1) 1px, transparent 1px),
+              linear-gradient(180deg, rgba(0, 171, 236, 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '60px 60px'
           }}
         />
       </div>
