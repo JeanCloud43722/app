@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: jeancloud-app
+    env: docker
+    plan: free
+    repo: https://github.com/JeanCloud43722/app
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 80
+      # Weitere Umgebungsvariablen basierend auf deiner .env.example hinzufügen
+      # Beispiel:
+      # - key: API_KEY
+      #   value: your-value-here
