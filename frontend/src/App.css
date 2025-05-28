@@ -53,11 +53,24 @@ body {
 
 .section-padding {
   padding: 120px 0;
+  scroll-margin-top: 100px; /* Prevents content from being hidden behind fixed navigation */
 }
 
 @media (max-width: 768px) {
   .section-padding {
     padding: 80px 0;
+    scroll-margin-top: 80px;
+  }
+}
+
+/* Ensure sections don't get hidden behind navigation */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 80px;
   }
 }
 
