@@ -1,0 +1,25 @@
+previews:
+  generation: automatic
+
+services:
+  - type: web
+    name: jeancloud-app
+    runtime: docker
+    repo: https://github.com/JeanCloud43722/app
+    branch: main
+    plan: free
+    region: frankfurt
+    autoDeploy: true
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 80
+      # Weitere Umgebungsvariablen gemäß deiner .env.example-Datei hinzufügen
+      # Beispiel:
+      # - key: API_KEY
+      #   sync: false
+    domains:
+      - jeancloud-app.onrender.com
