@@ -70,7 +70,18 @@ section[id] {
 
 @media (max-width: 768px) {
   section[id] {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 120px; /* Increased for mobile to account for larger navigation */
+  }
+}
+
+/* Additional padding for first section to prevent navigation overlap */
+section:first-of-type {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  section:first-of-type {
+    padding-top: 120px; /* Extra padding for mobile navigation */
   }
 }
 
