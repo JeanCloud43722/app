@@ -281,13 +281,14 @@ const BlogSection = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 1.5 }}
             >
-              <motion.button
+              <motion.a
+                href="/#contact"
                 className="gradient-primary px-8 py-4 rounded-full text-white font-semibold hover-glow"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Weitere Artikel laden
-              </motion.button>
+              </motion.a>
             </motion.div>
           </div>
 
