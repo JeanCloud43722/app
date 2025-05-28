@@ -59,13 +59,14 @@ const Navigation = () => {
                 {item.name}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="/#contact"
               className="gradient-primary px-6 py-2 rounded-full text-white font-semibold hover-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Kostenlose Beratung
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
