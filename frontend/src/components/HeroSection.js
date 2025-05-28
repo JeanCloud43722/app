@@ -146,22 +146,24 @@ const HeroSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.8 }}
           >
-            <motion.button
+            <motion.a
+              href="/#contact"
               className="gradient-primary px-8 py-4 rounded-full text-white font-semibold text-lg flex items-center space-x-2 hover-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <span>Kostenlose AEO-Analyse</span>
               <ArrowRight className="h-5 w-5" />
-            </motion.button>
+            </motion.a>
             
-            <motion.button
+            <motion.a
+              href="/#portfolio"
               className="glass-morphism px-8 py-4 rounded-full text-white font-semibold text-lg border-2 border-primary-500/50 hover:border-primary-500 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Case Studies ansehen
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
 
