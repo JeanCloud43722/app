@@ -98,9 +98,13 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full gradient-primary px-6 py-3 rounded-full text-white font-semibold">
+              <a
+                href="/#contact"
+                className="w-full gradient-primary px-6 py-3 rounded-full text-white font-semibold"
+                onClick={() => setIsOpen(false)}
+              >
                 Kostenlose Beratung
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
