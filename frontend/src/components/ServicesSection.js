@@ -194,13 +194,14 @@ const ServicesSection = () => {
               Lassen Sie uns gemeinsam Ihre digitale Präsenz revolutionieren. 
               AEO ist nicht die Zukunft - es ist das Jetzt.
             </p>
-            <motion.button
+            <motion.a
+              href="/#contact"
               className="gradient-primary px-8 py-4 rounded-full text-white font-semibold hover-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Kostenloses Strategiegespräch
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>
