@@ -117,17 +117,6 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <motion.div
-            className="inline-flex items-center space-x-2 bg-primary-500/20 backdrop-blur-lg px-6 py-3 rounded-full border border-primary-500/30 mb-8"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.2 }}
-          >
-            <Zap className="h-5 w-5 text-primary-400" />
-            <span className="text-primary-300 font-medium">
-              #1 AEO Agentur in Hamburg
-            </span>
-          </motion.div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold leading-tight mb-6">
             <span className="gradient-text">Answer Engine</span>
