@@ -325,13 +325,14 @@ const PortfolioSection = () => {
               Lassen Sie uns gemeinsam eine neue Erfolgsgeschichte schreiben. 
               Ihre AEO-Transformation beginnt mit einem Gespräch.
             </p>
-            <motion.button
+            <motion.a
+              href="/#contact"
               className="gradient-primary px-8 py-4 rounded-full text-white font-semibold hover-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Projekt besprechen
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>
