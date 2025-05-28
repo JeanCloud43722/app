@@ -359,20 +359,22 @@ const ContactSection = () => {
                 Hanseatisch direkt und ehrlich.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
+                <motion.a
+                  href="/#contact"
                   className="gradient-primary px-6 py-3 rounded-full text-white font-semibold hover-glow flex-1"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   Termin vereinbaren
-                </motion.button>
-                <motion.button
+                </motion.a>
+                <motion.a
+                  href="tel:+4940123456789"
                   className="glass-morphism px-6 py-3 rounded-full text-white font-semibold border border-primary-500/50 hover:border-primary-500 transition-colors flex-1"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   +49 40 123 456 789
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
           </motion.div>
