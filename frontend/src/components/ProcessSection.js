@@ -241,20 +241,22 @@ const ProcessSection = () => {
               Ihre digitale Transformation beginnt heute.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+              <motion.a
+                href="/#contact"
                 className="gradient-primary px-8 py-4 rounded-full text-white font-semibold hover-glow"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Projekt starten
-              </motion.button>
-              <motion.button
+              </motion.a>
+              <motion.a
+                href="/#process"
                 className="glass-morphism px-8 py-4 rounded-full text-white font-semibold border-2 border-primary-500/50 hover:border-primary-500 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Prozess-Details
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>
